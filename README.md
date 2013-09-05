@@ -15,7 +15,7 @@ func gets passed two arguments:
 
   ```javascript
   iterate(limit, inital_value, func(index, applied_value) { do_stuff(); })
-	```
+  ```
 
 'index' is the current index of the loop. 'applied_value' is the return value of that function for the previous iteration.
 
