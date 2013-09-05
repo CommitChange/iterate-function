@@ -1,7 +1,7 @@
 {
   "name": "iterate-function",
-  "version": "1.0.0",
-  "description": "Repeatedly apply a function to a value, then to the result of that application, then to the result of that application, then to the result of that application, and so on up to the limit.",
+  "version": "1.1.0",
+  "description": "Repeatedly apply a function.",
   "main": "iterate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,7 @@
     "functional",
     "haskell",
     "repeat",
+    "times",
     "application"
   ],
   "author": "jay r bolton <jayrbolton@gmail.com> (http://jayrbolton.com/)",

@@ -1,19 +1,38 @@
 iterate-function
 ================
 
+Repeatedly apply a function.
+
   ```javascript
   iterate(limit, inital_value, func)
+
+	// or:
+
+  iterate(limit, func)
   ```
 
-Repeatedly apply a function to a value, then to the result of that application, then to the result of that application, then to the result of that application, and so on up to the limit.
+func gets passed two arguments:
 
-For example, the powers of 2:
+  ```javascript
+  iterate(limit, inital_value, func(index, applied_value) { do_stuff(); })
+	```
+
+'index' is the current index of the loop. 'applied_value' is the return value of that function for the previous iteration.
+
+Simple example:
+
+  ```javascript
+	iterate(3, function(i) { console.log(i) })
+	> 0
+	> 1
+	> 2
+  ```
+
+Using the applied value to get the powers of 2:
 
   ```javascript
   power = iterate(4, 1, function(n) { return n * 2 });
   > 16
   ```
-
-You can also access the index of the current iteration as the second parameter in the passed function.
 
 see similar: http://hackage.haskell.org/packages/archive/base/latest/doc/html/Prelude.html#v:iterate
