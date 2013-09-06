@@ -31,7 +31,7 @@ Simple example:
 Using the applied value to get the powers of 2:
 
   ```javascript
-  power = iterate(4, 1, function(n) { return n * 2 });
+  power = iterate(4, 1, function(i, applied) { return applied * 2 });
   > 16
   ```
 
